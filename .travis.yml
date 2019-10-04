@@ -7,4 +7,4 @@ before_install:
          
 
 script:
-        - docker run deepti0905/docker-react npm run test -- --coverage 
+        - docker run -e CI=true deepti0905/docker-react npm run test
